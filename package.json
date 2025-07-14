@@ -9,12 +9,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codewithdripzy/snack-alert.git"
+    "url": "git+https://github.com/codewithdripzy/SnackAlert.git"
   },
   "bugs": {
-    "url": "https://github.com/codewithdripzy/snack-alert/issues"
+    "url": "https://github.com/codewithdripzy/SnackAlert/issues"
   },
-  "homepage": "https://github.com/codewithdripzy/snack-alert#readme",
+  "homepage": "https://github.com/codewithdripzy/SnackAlert#readme",
   "keywords": [
     "alert",
     "snackbar",

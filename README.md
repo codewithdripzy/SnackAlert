@@ -197,4 +197,4 @@ MIT License © 2025 Emmanuel Bankole
 
 ## 📬 Contact
 
-For questions or feedback, reach out via [GitHub Issues](https://github.com/codewithdripzy/snack-alert/issues) or [email](mailto:thecodeguyy@gmail.com)
+For questions or feedback, reach out via [GitHub Issues](https://github.com/codewithdripzy/SnackAlert/issues) or [email](mailto:thecodeguyy@gmail.com)
