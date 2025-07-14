@@ -28,6 +28,9 @@ export default defineConfig({
     dts({
       insertTypesEntry: true,
       copyDtsFiles: true,
+      include: ['src'],
+      exclude: ['node_modules', 'dist'],
+      tsconfigPath: './tsconfig.app.json', // specify your tsconfig file
     })
   ],
 })

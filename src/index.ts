@@ -1,2 +1,3 @@
-export { AlertType, mountSnackAlert, withSnackAlert } from './main.tsx';
-export { useAlert } from './core/hooks/provider.ts';
+export { AlertType, withSnackAlert } from './main';
+export { mountSnackAlert } from './mount';
+export { useAlert } from './core/hooks/provider';
