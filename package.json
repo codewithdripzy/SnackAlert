@@ -32,7 +32,7 @@
     "react-toastify-component"
   ],
   "private": false,
-  "version": "1.0.7",
+  "version": "1.0.8",
   "type": "module",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
@@ -42,7 +42,8 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/snack-alert.es.js",
       "require": "./dist/snack-alert.umd.js"
-    }
+    },
+    "./css": "./dist/snack-alert.css"
   },
   "files": [
     "dist"
