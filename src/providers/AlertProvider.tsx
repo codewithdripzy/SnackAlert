@@ -2,6 +2,7 @@ import { useState, type ReactNode, useRef } from "react";
 import { AlertType } from "../core/enums/provider";
 import { AlertContext } from "../core/contexts/provider";
 import type { AlertProps, ShowAlertParams } from "../core/interface/provider";
+import { App } from "../App";
 
 const AlertProvider = ({ children }: { children: ReactNode }) => {
     const alertTimeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -64,6 +65,7 @@ const AlertProvider = ({ children }: { children: ReactNode }) => {
             }}
         >
             {children}
+            <App />
         </AlertContext.Provider>
     );
 };
