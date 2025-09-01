@@ -32,14 +32,14 @@
     "react-toastify-component"
   ],
   "private": false,
-  "version": "1.0.9",
+  "version": "1.0.10",
   "type": "module",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
   "typesVersions": {
     "*": {
-      "css": ["src/types/css.d.ts"]
+      "css": ["dist/types/css.d.ts"]
     }
   },
   "exports": {
@@ -48,7 +48,10 @@
       "import": "./dist/snack-alert.es.js",
       "require": "./dist/snack-alert.umd.js"
     },
-    "./css": "./dist/snack-alert.css"
+    "./css": {
+      "import": "./dist/snack-alert.css",
+      "types": "./dist/types/css.d.ts"
+    }
   },
   "files": [
     "dist"
