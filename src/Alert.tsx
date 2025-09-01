@@ -7,10 +7,10 @@ function Alert({ show, message, type, clearAlert }: AlertProps) {
         <div className={`alert-container ${show ? "show" : "hide"}`}>
             <div className={`alert alert-${type}`}>
                 <span className="alert-icon">
-                    {type === AlertType.SUCCESS ? <CircleCheckBig className="size-[20px]" /> : null}
-                    {type === AlertType.ERROR ? <TriangleAlert className="size-[20px]" /> : null}
-                    {type === AlertType.INFO ? <Info className="size-[20px]" /> : null}
-                    {type === AlertType.WARNING ? <CircleAlert className="size-[20px]" /> : null}
+                    {type === AlertType.SUCCESS ? <CircleCheckBig className="size-[22px]" /> : null}
+                    {type === AlertType.ERROR ? <TriangleAlert className="size-[22px]" /> : null}
+                    {type === AlertType.INFO ? <Info className="size-[22px]" /> : null}
+                    {type === AlertType.WARNING ? <CircleAlert className="size-[22px]" /> : null}
                 </span>
                 <span className="alert-message">{message}</span>
                 <div className="ml-2" onClick={clearAlert}>
