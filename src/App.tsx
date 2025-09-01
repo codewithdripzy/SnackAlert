@@ -1,3 +1,4 @@
+import './styles/index.css'
 import Alert from './Alert.tsx'
 import { useAlert } from './core/hooks/provider.ts';
 import { AlertType } from './core/enums/provider.ts';

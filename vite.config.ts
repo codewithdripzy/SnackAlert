@@ -3,6 +3,7 @@ import path from 'path';
 import dts from 'vite-plugin-dts';
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite';
+import postcss from "rollup-plugin-postcss";
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -31,6 +32,10 @@ export default defineConfig({
       include: ['src'],
       exclude: ['node_modules', 'dist'],
       tsconfigPath: './tsconfig.app.json', // specify your tsconfig file
-    })
+    }),
+    postcss({
+      inject: true,
+      minimize: true,
+    }),
   ],
 })
