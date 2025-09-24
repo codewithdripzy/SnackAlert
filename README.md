@@ -16,12 +16,36 @@ yarn add snackalert
 
 SnackAlert gives you two powerful ways to get started instantly — **automatic injection** or **app wrapping** — with no extra setup.
 
-### 🧩 Option 1: Auto-Mount Anywhere (Zero Config)
+
+### 🧩 Option 1: Use `withSnackAlert` HOC
+
+> Prefer manual control over your root app? Wrap it cleanly with the `withSnackAlert` helper.
+
+```tsx
+// main.tsx
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { App } from './App';
+
+import 'snack-alert/css';
+import { withSnackAlert } from 'snack-alert';
+
+const AppWithAlerts = withSnackAlert(App);
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <AppWithAlerts />
+  </React.StrictMode>
+);
+```
+
+### 🧩 Option 2: Auto-Mount Anywhere (Zero Config)
 
 > Perfect for static apps, SPAs, or dashboards — SnackAlert mounts itself globally.
 
 ```tsx
-import { mountSnackAlert } from 'snackalert';
+import 'snack-alert/css';
+import { mountSnackAlert } from 'snack-alert';
 
 // Mount the alert system into the DOM (usually called once at app start)
 mountSnackAlert();
@@ -30,7 +54,7 @@ mountSnackAlert();
 Now you can trigger alerts anywhere using the `useAlert` hook:
 
 ```tsx
-import { useAlert, AlertType } from 'snackalert';
+import { useAlert, AlertType } from 'snack-alert';
 
 const MyComponent = () => {
   const { showAlert } = useAlert();
@@ -49,39 +73,19 @@ const MyComponent = () => {
 };
 ```
 
-### 🧩 Option 2: Use `withSnackAlert` HOC
-
-> Prefer manual control over your root app? Wrap it cleanly with the `withSnackAlert` helper.
-
-```tsx
-// main.tsx
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { App } from './App';
-import { withSnackAlert } from 'snackalert';
-
-const AppWithAlerts = withSnackAlert(App);
-
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <AppWithAlerts />
-  </React.StrictMode>
-);
-```
-
 ### ✅ What’s Exported
 
 ```ts
 // snackalert package
-export { useAlert } from 'snackalert';
-export { AlertType, mountSnackAlert, withSnackAlert } from 'snackalert';
+export { useAlert } from 'snack-alert';
+export { AlertType, mountSnackAlert, withSnackAlert } from 'snack-alert';
 
 ```
 
 ### 2. **Use the `useAlert` hook**
 
 ```tsx
-import { useAlert, AlertType } from 'snackalert';
+import { useAlert, AlertType } from 'snack-alert';
 
 const MyComponent = () => {
   const { showAlert } = useAlert();
